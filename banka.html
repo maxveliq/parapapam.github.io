@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .bruzzers {
+            padding: 5px;
+            width: 200px;
+            height: 50px;
+            background-color: beige;
+            border: 1px solid black;
+            position: absolute;
+            top: calc(50% - 25px);
+            left: calc(50% - 100px);
+        }
+        .lox{
+            width: 400px;
+            height: 260px;
+            position: absolute;
+            top: calc(50% - 130px);
+            left: calc(50% - 200px);
+            opacity: 1;
+            z-index: -1;
+        }
+
+        .banka {
+            opacity: 1;
+            z-index: 1;
+            transform :scale(3.2);
+            animation: anim .7s 1 linear;
+        }
+
+        @keyframes anim {
+            0% {
+                transform: scale(1) rotate(0deg);
+            }
+            100% {
+                transform: scale(3) rotate(2880deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <button onclick="bankass()" id="bruzzers" class="bruzzers">Click me to see something in somewhere!</button>
+    <img class="lox" id="foto" src="https://www.meme-arsenal.com/memes/764392ee3fc05e9a94c8fae1f546d456.jpg">
+
+    <script src="banka.js"></script>
+</body>
+</html>
